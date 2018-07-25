@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <FooBanner/>
+    <Main/>
   </div>
 </template>
 
 <script>
-import FooBanner from './components/FooBanner.vue'
+import Main from './components/Main.vue'
 export default {
   name: 'app',
   components: {
-    FooBanner
+    Main
   }
 }
 </script>
