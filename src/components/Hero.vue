@@ -19,14 +19,48 @@
           Hello, I am fall1600
         </h1>
         <h2 class="subtitle">
-          A Backend engineer loves 
-          <a class="buzzword" target="blank" href="https://symfony.com/">#Symfony</a>
-          <a class="buzzword" target="blank" href="https://vuejs.org/">#Vue</a>
+          A Backend engineer loves
+          <a class="buzzword" target="blank" :href="buzzwords[index].url">#{{buzzwords[index].key}}</a>
         </h2>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  created: function () {
+    const me = this
+    setInterval(function () {
+      me.swapBuzzword()
+    }, 3000)
+  },
+  methods: {
+    swapBuzzword: function () {
+      this.index++
+      if (this.index == this.buzzwords.length) {
+        this.index = 0
+      }
+    }
+  },
+  data: () => {
+    return {
+      index: 0,
+      buzzwords: [
+        {
+          key: "Symfony",
+          url: "https://symfony.com/"
+        },
+        {
+          key: "Vue",
+          url: "https://vuejs.org/"
+        },
+      ]
+    }
+  }
+}
+</script>
+
 
 <style lang="sass" scoped>
 .buzzword
