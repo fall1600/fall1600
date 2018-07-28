@@ -25,14 +25,12 @@
   </div>
 </template>
 
-<style scoped>
-figure.image > img {
-  border-radius: 1%;
-  filter: blur(2px);
-}
+<style lang='sass' scoped>
+figure.image > img 
+  border-radius: 1%
+  filter: blur(2px)
 
-figure.image > img:hover {
-  filter: blur(0px);
-}
+figure.image > img:hover 
+  filter: blur(0px)
 </style>
 
