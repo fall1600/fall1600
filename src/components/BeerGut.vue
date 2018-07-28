@@ -80,6 +80,7 @@
         </div>
       </div>
     </div>
+    <hr>
     <div class="columns features">
       <div class="column is-3" v-show="imgFlag">
         <div class="card is-shady">
@@ -133,6 +134,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+section.container
+  margin-top: 50px
 div.content 
   > span.item
     display: block
