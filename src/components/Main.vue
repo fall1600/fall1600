@@ -1,21 +1,19 @@
 <template>
-  <div class="container">
-    <div class="notification">
-      <Namecard/>
-      <!-- <UbeeIO/> -->
-    </div>
+  <div>
+    <Hero/>
+    <BeerGut/>
   </div>
 </template>
 
 <script>
-import Namecard from './Namecard.vue'
-import UbeeIO from './UbeeIO.vue'
+import Hero from './Hero.vue'
+import BeerGut from './BeerGut.vue'
 export default {
   components: {
-    Namecard, UbeeIO
+    Hero, BeerGut
   }
 }
 </script>
 
-<style scoped>
+<style lang="sass" scoped>
 </style>
