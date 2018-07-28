@@ -11,7 +11,9 @@
           <div class="card-content">
             <div class="content">
               <h4>醫療應用平台</h4>
-              <p>後端: 大檔案續傳</p>
+              <span class="item">前端: tune 畫面</span>
+              <span class="item">後端: 大檔案續傳</span>
+              <span class="item">2018/05</span>
               <p>
                 <router-link :to="{ name: 'story-lungnodule'}">More</router-link>
               </p>
@@ -23,32 +25,17 @@
         <div class="card is-shady">
           <div class="card-image has-text-centered" v-show=imgFlag>
             <a target="blank" href="https://www.ubee.io/">
-             <img src="https://www.ubee.io/static/img/logo.e26b638.png" alt="ubee photo">
+              <img src="https://www.ubee.io/static/img/logo.e26b638.png" alt="ubee photo">
             </a>
           </div>
           <div class="card-content">
             <div class="content">
               <h4>房屋比價網站</h4>
-              <p>前端: 地圖找房</p>
-              <p>後端: 房屋仲介, 商品訂單, 金流</p>
+              <span class="item">前端: 地圖找房</span>
+              <span class="item">後端: 房屋仲介, 金流</span>
+              <span class="item">2017/01</span>
               <p>
                 <router-link :to="{ name: 'story-ubee'}">More</router-link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-3" v-show="notOnline">
-        <div class="card is-shady">
-          <div class="card-image has-text-centered" v-show=imgFlag>
-            <img src="https://ww2.godexintl.com/static/img/logo.6ef074c.png" alt="godex photo">
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>產品網站</h4>
-              <p>產品及其關聯資料設計</p>
-              <p>
-                <router-link :to="{ name: 'story-godex'}">More</router-link>
               </p>
             </div>
           </div>
@@ -64,7 +51,8 @@
           <div class="card-content">
             <div class="content">
               <h4>影音平台</h4>
-              <p>後端: DIY page view</p>
+              <span class="item">後端: DIY page view</span>
+              <span class="item">2017/09</span>
               <p>
                 <router-link :to="{ name: 'story-ptsplus'}">More</router-link>
               </p>
@@ -82,9 +70,31 @@
           <div class="card-content">
             <div class="content">
               <h4>課程平台</h4>
-              <p>前端: 購物車</p>
+              <span class="item">前端: 購物車</span>
+              <span class="item">2016/12</span>
               <p>
                 <router-link :to="{ name: 'story-uknowiknow'}">More</router-link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns features">
+      <div class="column is-3" v-show="imgFlag">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered" v-show=imgFlag>
+            <a target="blank" href="https://ww2.godexintl.com">
+              <img src="https://ww2.godexintl.com/static/img/logo.6ef074c.png" alt="godex photo">
+            </a>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>產品網站</h4>
+              <span class="item">後端: 產品及其關聯資料schema設計, 多語系</span>
+              <span class="item">2018/02</span>
+              <p>
+                <router-link class="is-right" :to="{ name: 'story-godex'}">More</router-link>
               </p>
             </div>
           </div>
@@ -97,28 +107,38 @@
 <script>
 import cheet from '../../node_modules/cheet.js/cheet.js'
 export default {
-  data: function () {
+  data: function() {
     return {
       imgFlag: false,
-      notOnline: false,
-      code: "f j d k"
+      code: 'f j d k'
     }
   },
   methods: {
-    turnOnImg: function () {
+    turnOnImg: function() {
       this.imgFlag = true
       cheet(this.code, this.turnOffImg)
     },
-    turnOffImg: function () {
+    turnOffImg: function() {
       this.imgFlag = false
       cheet(this.code, this.turnOnImg)
     },
-    registerCheets: function () {
+    registerCheets: function() {
       cheet(this.code, this.turnOnImg)
     }
   },
-  created: function () {
+  created: function() {
     this.registerCheets()
   }
 }
 </script>
+
+<style lang="sass" scoped>
+div.content 
+  > span.item
+    display: block
+  > p
+    margin-top: 10px
+div.card-image img
+  margin-top: 20px
+</style>
+
