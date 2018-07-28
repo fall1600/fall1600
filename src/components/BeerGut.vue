@@ -13,7 +13,7 @@
               <h4>醫療應用平台</h4>
               <p>後端: 大檔案續傳</p>
               <p>
-                <a href="#">More</a>
+                <router-link :to="{ name: 'story-lungnodule'}">More</router-link>
               </p>
             </div>
           </div>
@@ -32,7 +32,7 @@
               <p>前端: 地圖找房</p>
               <p>後端: 房屋仲介, 商品訂單, 金流</p>
               <p>
-                <a href="#">More</a>
+                <router-link :to="{ name: 'story-ubee'}">More</router-link>
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@
               <h4>產品網站</h4>
               <p>產品及其關聯資料設計</p>
               <p>
-                <a href="#">More</a>
+                <router-link :to="{ name: 'story-godex'}">More</router-link>
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@
               <h4>影音平台</h4>
               <p>後端: DIY page view</p>
               <p>
-                <a href="#">More</a>
+                <router-link :to="{ name: 'story-ptsplus'}">More</router-link>
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <h4>課程平台</h4>
               <p>前端: 購物車</p>
               <p>
-                <a href="#">More</a>
+                <router-link :to="{ name: 'story-uknowiknow'}">More</router-link>
               </p>
             </div>
           </div>
