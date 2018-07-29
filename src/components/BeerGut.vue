@@ -5,7 +5,7 @@
         <div class="card is-shady">
           <div class="card-image has-text-centered" v-show=imgFlag>
             <a target="blank" href="https://www.lunlabel.muenai.com">
-              <img src="http://lorempixel.com/400/100" alt="">
+              <img src="../assets/muenai.png" alt="muen photo">
             </a>
           </div>
           <div class="card-content">
@@ -25,7 +25,7 @@
         <div class="card is-shady">
           <div class="card-image has-text-centered" v-show=imgFlag>
             <a target="blank" href="https://www.ubee.io/">
-              <img src="https://www.ubee.io/static/img/logo.e26b638.png" alt="ubee photo">
+              <img src="../assets/ubee.png" alt="ubee photo">
             </a>
           </div>
           <div class="card-content">
@@ -45,7 +45,7 @@
         <div class="card is-shady">
           <div class="card-image has-text-centered" v-show=imgFlag>
             <a target="blank" href="https://www.ptsplus.tv/">
-              <img src="https://www.ptsplus.tv/static/images/layout/logo_pad.png" alt="ptsplus photo">
+              <img src="../assets/ptsplus.png" alt="ptsplus photo">
             </a>
           </div>
           <div class="card-content">
@@ -64,7 +64,7 @@
         <div class="card is-shady">
           <div class="card-image has-text-centered" v-show=imgFlag>
             <a target="blank" href="https://uknowiknow.com/">
-              <img src="https://uknowiknow.com/static/img/ukik_logo.1a32212.svg" alt="ptsplus photo">
+              <img src="../assets/uknowiknow.svg" alt="ptsplus photo">
             </a>
           </div>
           <div class="card-content">
@@ -86,7 +86,7 @@
         <div class="card is-shady">
           <div class="card-image has-text-centered" v-show=imgFlag>
             <a target="blank" href="https://ww2.godexintl.com">
-              <img src="https://ww2.godexintl.com/static/img/logo.6ef074c.png" alt="godex photo">
+              <img src="../assets/godex.png" alt="godex photo">
             </a>
           </div>
           <div class="card-content">
