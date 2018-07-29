@@ -1,117 +1,81 @@
 <template>
   <section class="container">
-    <div class="columns features">
-      <div class="column is-3">
-        <div class="card is-shady">
-          <div class="card-image has-text-centered" v-show=imgFlag>
-            <a target="blank" href="https://www.lunlabel.muenai.com">
-              <img src="../assets/muenai.png" alt="muen photo">
-            </a>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>醫療應用平台</h4>
-              <span class="item">前端: tune 畫面</span>
-              <span class="item">後端: 大檔案續傳</span>
-              <span class="item">2018/05</span>
-              <p>
-                <router-link :to="{ name: 'story-lungnodule'}">More</router-link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-3">
-        <div class="card is-shady">
-          <div class="card-image has-text-centered" v-show=imgFlag>
-            <a target="blank" href="https://www.ubee.io/">
-              <img src="../assets/ubee.png" alt="ubee photo">
-            </a>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>房屋比價網站</h4>
-              <span class="item">前端: 地圖找房</span>
-              <span class="item">後端: 房屋仲介, 金流</span>
-              <span class="item">2017/01</span>
-              <p>
-                <router-link :to="{ name: 'story-ubee'}">More</router-link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-3">
-        <div class="card is-shady">
-          <div class="card-image has-text-centered" v-show=imgFlag>
-            <a target="blank" href="https://www.ptsplus.tv/">
-              <img src="../assets/ptsplus.png" alt="ptsplus photo">
-            </a>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>影音平台</h4>
-              <span class="item">後端: DIY page view</span>
-              <span class="item">2017/09</span>
-              <p>
-                <router-link :to="{ name: 'story-ptsplus'}">More</router-link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-3">
-        <div class="card is-shady">
-          <div class="card-image has-text-centered" v-show=imgFlag>
-            <a target="blank" href="https://uknowiknow.com/">
-              <img src="../assets/uknowiknow.svg" alt="ptsplus photo">
-            </a>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>課程平台</h4>
-              <span class="item">前端: 購物車</span>
-              <span class="item">2016/12</span>
-              <p>
-                <router-link :to="{ name: 'story-uknowiknow'}">More</router-link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="columns features">
-      <div class="column is-3" v-show="imgFlag">
-        <div class="card is-shady">
-          <div class="card-image has-text-centered" v-show=imgFlag>
-            <a target="blank" href="https://ww2.godexintl.com">
-              <img src="../assets/godex.png" alt="godex photo">
-            </a>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <h4>產品網站</h4>
-              <span class="item">後端: 產品及其關聯資料schema設計, 多語系</span>
-              <span class="item">2018/02</span>
-              <p>
-                <router-link class="is-right" :to="{ name: 'story-godex'}">More</router-link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="columns features is-multiline">
+      <Story
+        v-for="story in stories"
+        :story="story"
+        :imgFlag="imgFlag"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import cheet from '../../node_modules/cheet.js/cheet.js'
+import cheet from '@/../node_modules/cheet.js/cheet.js'
+import muenaiImage from '@/assets/muenai.png'
+import godexImage from '@/assets/godex.png'
+import ptsplusImage from '@/assets/ptsplus.png'
+import ubeeImage from '@/assets/ubee.png'
+import uknowiknowImage from '@/assets/uknowiknow.svg'
+import Story from '@/components/BeerGut/Story.vue'
 export default {
+  created: function () {
+    console.warn(muenaiImage)
+  },
+  components: {
+    Story
+  },
   data: function() {
     return {
       imgFlag: false,
-      code: 'f j d k'
+      code: 'f j d k',
+      stories: [
+        {
+          title: "醫療應用平台",
+          frontend: "tune 畫面",
+          backend: "大檔案續傳",
+          startAt: "2018/05",
+          outsideLink: "https://www.lunlabel.muenai.com",
+          imageSource: muenaiImage,
+          detailRoute: "story-lungnodule"
+        },
+        {
+          title: "房屋比價網站",
+          frontend: "地圖找房",
+          backend: "房屋仲介, 金流",
+          startAt: "2018/05",
+          outsideLink: "https://www.ubee.io",
+          imageSource: ubeeImage,
+          detailRoute: "story-ubee"
+        },
+        {
+          title: "影音平台",
+          frontend: "",
+          backend: "DIY page view",
+          startAt: "2017/09",
+          outsideLink: "https://www.ptsplus.tv",
+          imageSource: ptsplusImage,
+          detailRoute: "story-ptsplus"
+        },
+        {
+          title: "課程平台",
+          frontend: "購物車",
+          backend: "",
+          startAt: "2016/12",
+          outsideLink: "https://uknowiknow.com/",
+          imageSource: uknowiknowImage,
+          detailRoute: "story-uknowiknow"
+        },
+        {
+          title: "產品網站",
+          frontend: "",
+          backend: "產品及其關聯資料schema設計, 多語系",
+          startAt: "2018/02",
+          outsideLink: "https://ww2.godexintl.com",
+          imageSource: godexImage,
+          detailRoute: "story-godex"
+        }
+      ]
     }
   },
   methods: {
@@ -144,4 +108,3 @@ div.content
 div.card-image img
   margin-top: 20px
 </style>
-
