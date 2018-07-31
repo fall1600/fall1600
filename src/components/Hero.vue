@@ -19,8 +19,8 @@
           Hello, I am fall1600
         </h1>
         <h2 class="subtitle">
-          A Backend engineer loves
-          <a class="buzzword" target="blank" :href="buzzwords[index].url">#{{buzzwords[index].key}}</a>
+          A Backend engineer who loves
+          <a :class="{ buzzword: true, 'is-next-line': isMobile }" target="blank" :href="buzzwords[index].url">#{{buzzwords[index].key}}</a>
         </h2>
       </div>
     </div>
@@ -28,7 +28,9 @@
 </template>
 
 <script>
+import isMobile from '@/libs/mixins/isMobile.js'
 export default {
+  mixins: [isMobile],
   created: function () {
     const me = this
     setInterval(function () {
@@ -64,7 +66,13 @@ export default {
 
 <style lang="sass" scoped>
 .buzzword
-  margin: 5px
+  margin: auto 10px
+  position: absolute
+  font-weight: bold
+.is-next-line
+  display: block
+  position: relative
+  text-align: center
 img.avatar
   max-height: 600px
   width: auto
