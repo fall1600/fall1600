@@ -13,7 +13,7 @@
           <span v-show="story.backend" class="item">後端: {{ story.backend }}</span>
           <span class="item">{{ story.startAt }}</span>
           <p>
-            <router-link :to="{ name: 'story.detailRoute'}">More</router-link>
+            <router-link :to="{ name: story.detailRoute }">More</router-link>
           </p>
         </div>
       </div>
