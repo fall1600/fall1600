@@ -11,6 +11,17 @@
         <li>PATCH: 續傳檔案</li>
         <li>GET: 下載已經上傳好的檔案</li>
       </p>
+      背景程式, 使用: <a href="http://gearman.org/">gearman</a>
+      <p>
+        續傳成功後, 產生job, 交由gearman job server 分派, 並註冊對應worker 接手處理 <br>
+        另外, 分析資料處理規則後, 我將可拆的工作項目拆小, 額外規劃工作項目, 便能更完善地用到server 效能
+      </p>
+      tune 畫面
+      <p>
+        因應業務邏輯需在畫面上快速切換前後幾張圖片做比對, 因此快速載入圖片便為此調校項目 <br>
+        除了前端手動預先發api 得到前後物件, 也可採用http2 preload 機制, server 在response header 下preload 的Link, 便能讓前端預先得到下一張圖
+      </p>
+
     </div>
   </div>
 </template>
