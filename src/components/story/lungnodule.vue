@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <h1>Lungnodule</h1>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-body">
+        <h1 class="title">Lungnodule</h1>
+        <h2 class="subtitle">檔案續傳, 背景程式</h2>
+      </div>
+    </section>
+
     <div>
       大檔案續傳處理, 使用: <a href="https://tus.io/" target="_blank">tus.io</a>
       <p>
@@ -10,7 +16,6 @@
         <li>POST: 建立續傳資源, header 帶檔名換一個在server 上的續傳路徑(https://your.server/files/24e533e02ec3bc40c387f1a0e460e216)</li>
         <li>PATCH: 續傳檔案</li>
         <li>GET: 下載已經上傳好的檔案</li>
-      </p>
       背景程式, 使用: <a href="http://gearman.org/">gearman</a>
       <p>
         續傳成功後, 產生job, 交由gearman job server 分派, 並註冊對應worker 接手處理 <br>
