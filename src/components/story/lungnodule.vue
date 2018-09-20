@@ -27,7 +27,7 @@
       Python to app, 使用: <a href="https://pypi.org/project/py2exe/" target="_blank">py2exe</a>, <a href="https://py2app.readthedocs.io/en/latest/" target="_blank">py2app</a>
       <p>
         因部份資料處理的邏輯必須跑在客戶端, 所以提供Windows, Mac上的應用程式 <br>
-        以python, 在研究py2exe, py2app期間踩了一些環境上的地雷 <a href="https://drive.google.com/drive/folders/18p9OZtv3-zDq3oMnbGcsd-2xSiODnsZa?usp=sharing" target="_blank">[筆記]</a>
+        以python實現, 也紀錄了研究py2exe, py2app期間踩了一些環境上的地雷 <a href="https://drive.google.com/drive/folders/18p9OZtv3-zDq3oMnbGcsd-2xSiODnsZa?usp=sharing" target="_blank">[筆記]</a>
       </p>
       <hr>
       Tune 畫面
