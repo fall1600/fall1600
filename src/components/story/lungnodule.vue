@@ -10,7 +10,8 @@
     <div>
       大檔案續傳處理, 使用: <a href="https://tus.io/" target="_blank">tus.io</a>
       <p>
-        tus: 基於http, 專門用於網路上檔案續傳的通訊協定, 透過request 和response的header 做檔案狀態的溝通,
+        prod 環境目前最大上傳size 為3.3GB, dev 環境最大實測為10GB <br>
+        tus: 基於http, 專門用於網路上檔案續傳的通訊協定, 透過request 和response的header 做檔案狀態的溝通 <a href="https://docs.google.com/presentation/d/1ZfIwanCpZuE03MaG6MVdnZSqYLtt64eEh0AsEafhuRY/edit#slide=id.p" target="_blank">[筆記]</a>
         <li>OPTIONS: 查詢server 提供的續傳規格, 包含tus 版本, 檔案大小上限, server 支援的續傳行為(creation, expiration... )</li>
         <li>HEAD: 詢問目前檔案的續傳進度</li>
         <li>POST: 建立續傳資源, header 帶檔名換一個在server 上的續傳路徑(https://your.server/files/24e533e02ec3bc40c387f1a0e460e216)</li>
