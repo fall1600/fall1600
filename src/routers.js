@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 // all route
 import Main from './components/Main.vue'
+import page404 from './components/page404.vue'
 import lungnodule from './components/story/lungnodule.vue'
 import ubee from './components/story/ubee.vue'
 import godex from './components/story/godex.vue'
@@ -17,6 +18,11 @@ export default new VueRouter({
       path: "",
       name: "root",
       component: Main
+    },
+    {
+      path: "*",
+      name: "404",
+      component: page404
     },
     {
       path: "/story/lungnodule",
