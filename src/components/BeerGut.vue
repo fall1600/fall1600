@@ -34,11 +34,21 @@ export default {
           detailRoute: "story-lungnodule"
         },
         {
+            title: "產品網站",
+            real_title: "godex",
+            frontend: "",
+            backend: "產品及其關聯資料schema設計, 多語系",
+            startAt: "2018/02",
+            outsideLink: "https://www.godexintl.com/?locale=en",
+            imageSource: godexImage,
+            detailRoute: "story-godex"
+        },
+        {
           title: "房屋比價網站",
           real_title: "ubee",
           frontend: "地圖找房",
           backend: "房屋仲介, 金流",
-          startAt: "2018/05",
+          startAt: "2017/05",
           outsideLink: "https://www.ubee.io",
           imageSource: ubeeImage,
           detailRoute: "story-ubee"
@@ -63,16 +73,6 @@ export default {
           imageSource: uknowiknowImage,
           detailRoute: "story-uknowiknow"
         },
-        {
-          title: "產品網站",
-          real_title: "godex",
-          frontend: "",
-          backend: "產品及其關聯資料schema設計, 多語系",
-          startAt: "2018/02",
-          outsideLink: "https://ww2.godexintl.com",
-          imageSource: godexImage,
-          detailRoute: "story-godex"
-        }
       ]
     }
   }
