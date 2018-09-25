@@ -25,6 +25,7 @@ export default {
       stories: [
         {
           title: "醫療應用平台",
+          real_title: "lungnodule",
           frontend: "tune 畫面",
           backend: "大檔案續傳",
           startAt: "2018/05",
@@ -34,6 +35,7 @@ export default {
         },
         {
           title: "房屋比價網站",
+          real_title: "ubee",
           frontend: "地圖找房",
           backend: "房屋仲介, 金流",
           startAt: "2018/05",
@@ -43,6 +45,7 @@ export default {
         },
         {
           title: "影音平台",
+          real_title: "ptsplus",
           frontend: "",
           backend: "DIY page view",
           startAt: "2017/09",
@@ -52,6 +55,7 @@ export default {
         },
         {
           title: "課程平台",
+          real_title: "uknowiknow",
           frontend: "購物車",
           backend: "",
           startAt: "2016/12",
@@ -61,6 +65,7 @@ export default {
         },
         {
           title: "產品網站",
+          real_title: "godex",
           frontend: "",
           backend: "產品及其關聯資料schema設計, 多語系",
           startAt: "2018/02",
