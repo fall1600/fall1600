@@ -6,7 +6,7 @@
           <img :src="story.imageSource">
         </a>
       </div>
-      <div class="card-content">
+      <div class="card-content" @click="go2story">
         <div class="content">
           <h4>{{ story.title }}</h4>
           <span v-show="story.frontend" class="item">前端: {{ story.frontend }}</span>
@@ -38,6 +38,11 @@ export default {
         return true
       }
     }
+  },
+  methods: {
+    go2story: function () {
+      this.$router.push({name: this.story.detailRoute})
+    }
   }
 }
 </script>
@@ -48,6 +53,7 @@ section.container
 div.card
   height: 100%
 div.content 
+  cursor: pointer
   > span.item
     display: block
   > p
