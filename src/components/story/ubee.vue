@@ -2,7 +2,8 @@
   <div class="container">
     <section class="hero">
       <div class="hero-body">
-        <h1 class="title">Ubee</h1>
+        <h1 v-if="mode==='interview'" class="title">Ubee</h1>
+        <h1 v-else-if="mode==='guest'" class="title">房屋比價網站</h1>
         <h2 class="subtitle">地圖找房, 金流</h2>
       </div>
     </section>
@@ -41,3 +42,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    mode: function () {
+      return this.$store.getters.mode
+    },
+  }
+}
+</script>

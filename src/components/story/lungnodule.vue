@@ -2,7 +2,8 @@
   <div class="container">
     <section class="hero">
       <div class="hero-body">
-        <h1 class="title">Lungnodule</h1>
+        <h1 v-if="mode==='interview'" class="title">Lungnodule</h1>
+        <h1 v-else-if="mode==='guest'" class="title">醫療應用平台</h1>
         <h2 class="subtitle">檔案續傳, 背景程式, 應用程式</h2>
       </div>
     </section>
@@ -41,7 +42,10 @@
 
 <script>
 export default {
-  created: () => {
+  computed: {
+    mode: function () {
+      return this.$store.getters.mode
+    },
   }
 }
 </script>
