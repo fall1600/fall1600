@@ -9,8 +9,10 @@
 
 <script>
 import Main from './components/Main.vue'
+import modeMixin from '@/libs/mixins/mode.js'
 export default {
   name: 'app',
+  mixins: [modeMixin],
   components: {
     Main
   }
