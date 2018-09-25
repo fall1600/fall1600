@@ -8,7 +8,9 @@
 <script>
 import Hero from './Hero.vue'
 import BeerGut from './BeerGut.vue'
+import modeMixin from '@/libs/mixins/mode.js'
 export default {
+  mixins: [modeMixin],
   components: {
     Hero, BeerGut
   }

@@ -22,8 +22,23 @@
 </template>
 
 <script>
+import modeMixin from '@/libs/mixins/mode.js'
 export default {
-  props: ["story", "imgFlag"],
+  mixins: [modeMixin],
+  props: ["story"],
+  computed: {
+    mode: function () {
+      return this.$store.getters.mode
+    },
+    imgFlag: function () {
+      if (this.mode === "guest") {
+        return false
+      }
+      if (this.mode === "interview") {
+        return true
+      }
+    }
+  }
 }
 </script>
 
