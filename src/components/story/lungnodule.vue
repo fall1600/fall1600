@@ -9,6 +9,8 @@
     </section>
 
     <div>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/otsM0GafUQ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <br>
       大檔案續傳處理, 使用: <a href="https://tus.io/" target="_blank">tus.io</a>
       <p>
         prod 環境目前最大上傳size 為3.3GB, dev 環境最大實測為10GB <br>
