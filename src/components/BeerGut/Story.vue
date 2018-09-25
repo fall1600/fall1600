@@ -1,7 +1,7 @@
 <template>
   <div class="column is-3">
     <div class="card is-shady">
-      <div class="card-image has-text-centered" v-show=imgFlag>
+      <div class="card-image has-text-centered" v-if=imgFlag>
         <a target="blank" :href="story.outsideLink">
           <img :src="story.imageSource">
         </a>
