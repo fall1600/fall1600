@@ -25,27 +25,27 @@ export default new VueRouter({
       component: page404
     },
     {
-      path: "/story/lungnodule",
+      path: "/story/medical",
       name: "story-lungnodule",
       component: lungnodule
     },
     {
-      path: "/story/ubee",
+      path: "/story/house",
       name: "story-ubee",
       component: ubee
     },
     {
-      path: "/story/godex",
+      path: "/story/product",
       name: "story-godex",
       component: godex
     },
     {
-      path: "/story/ptsplus",
+      path: "/story/tv",
       name: "story-ptsplus",
       component: ptsplus
     },
     {
-      path: "/story/uknowiknow",
+      path: "/story/school",
       name: "story-uknowiknow",
       component: uknowiknow
     }
