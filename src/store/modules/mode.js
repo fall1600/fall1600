@@ -1,20 +1,27 @@
 export default {
   state: {
-      mode: "normal"
+    modes: ["guest", "interview"],
+    mode: "guest"
   },
   mutations: {
-    'set.mode' (state, parameter) {
-        state.mode = parameter
+    'reset.mode' (state) {
+      state.mode = "guest"
+    },
+    'set.mode.interview' (state) {
+        state.mode = "interview"
     }
   },
   actions: {
-      'set.mode' (context, parameter) {
-          context.commit('set.mode', parameter)
-      }
+    'reset.mode' (context) {
+      context.commit('reset.mode')
+    },
+    'set.mode.interview' (context) {
+      context.commit('set.mode.interview')
+    }
   },
   getters: {
-      mode (state) {
-          return state.mode
-      }
+    mode (state) {
+      return state.mode
+    }
   }
 }
