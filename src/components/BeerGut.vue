@@ -19,15 +19,24 @@ import ubeeImage from '@/assets/ubee.png'
 import uknowiknowImage from '@/assets/uknowiknow.svg'
 import Story from '@/components/BeerGut/Story.vue'
 export default {
-  created: function () {
-    console.warn(muenaiImage)
-  },
   components: {
     Story
   },
+  computed: {
+    mode: function () {
+      return this.$store.getters.mode
+    },
+    imgFlag: function () {
+      if (this.mode === "guest") {
+          return false
+      }
+      if (this.mode === "interview") {
+          return true
+      }
+    }
+  },
   data: function() {
     return {
-      imgFlag: false,
       code: 'f j d k',
       stories: [
         {
@@ -80,11 +89,11 @@ export default {
   },
   methods: {
     turnOnImg: function() {
-      this.imgFlag = true
+      this.$store.dispatch("set.mode.interview")
       cheet(this.code, this.turnOffImg)
     },
     turnOffImg: function() {
-      this.imgFlag = false
+      this.$store.dispatch("reset.mode")
       cheet(this.code, this.turnOnImg)
     },
     registerCheets: function() {
