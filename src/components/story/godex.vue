@@ -21,7 +21,7 @@
         產品規格自身儲存邏輯, 因應上圖(schema) 的資料關聯, 藉由發送event 達到程式邏輯解耦合 <br>
         <img src="../../assets/product_create_spec.png" alt=""> <br><br>
         清查註冊接聽此事件的listener <br>
-        $ app/console debug:event-dispatcher
+        $ app/console debug:event-dispatcher <br>
         <img src="../../assets/product_create_spec_event.png" alt="">
       </p>
       <hr>
