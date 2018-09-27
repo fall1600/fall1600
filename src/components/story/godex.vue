@@ -7,6 +7,13 @@
         <h2 class="subtitle">產品及其關聯資料, 多語系</h2>
       </div>
     </section>
+
+    <div>
+      簡介: 以產品為核心的商業網站, 具備多樣關聯物件, 並考慮多語處理<br>
+      <img src="../../assets/product_main.png" alt="">
+      <br>
+    </div>
+    <hr>
     <div>
       資料庫schema 開發, 使用 <a href="http://propelorm.org/" target="_blank">Propel</a> <br>
       <p>
@@ -25,6 +32,14 @@
         <img src="../../assets/product_create_spec_event.png" alt="">
       </p>
       <hr>
+      <p>
+        Nested Set Model 為資料庫中常見的階層式資料儲存, 常見的應用場景為階層式分類或目錄 <br>
+        恰好應用在專案中的階層式問答, 此
+        <a href="https://docs.google.com/presentation/d/17P6VY9vT18i6zCsWLK0mBXquCJ_S4SN0h1T6v3LUXlE/edit" target="_blank">[文件]</a>
+        為我開給remote 前端的api 說明書
+        <br>
+        <img src="../../assets/product_qatree.png" alt="">
+      </p>
     </div>
   </div>
 </template>
