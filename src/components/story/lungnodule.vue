@@ -9,11 +9,20 @@
     </section>
 
     <div>
+      簡介: 用於醫生標示x光片的智慧醫療平台, 主邏輯分為網頁上的圖片標示, 以及系統的資料上傳與dicom 檔(x光片)解析 <br>
+      <img src="../../assets/hospital_main.png" alt="">
+      <br><br>
+      說明: 資料上傳處理, 前期prototype demo 影片, 用來驗證上傳資料的solution 是有效的<br>
       <iframe width="853" height="480" src="https://www.youtube.com/embed/otsM0GafUQ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <br>
+    </div>
+
+    <hr>
+
+    <div>
       大檔案續傳處理, 使用: <a href="https://tus.io/" target="_blank">tus.io</a>
       <p>
-        prod 環境目前最大上傳size 為3.3GB, dev 環境最大實測為10GB <br>
+        大檔案有多大? prod 環境目前最大上傳size 為3.3GB, dev 環境最大實測為10GB <br>
         tus: 基於http, 專門用於網路上檔案續傳的通訊協定, 透過request 和response的header 做檔案狀態的溝通 <a href="https://docs.google.com/presentation/d/1ZfIwanCpZuE03MaG6MVdnZSqYLtt64eEh0AsEafhuRY/edit#slide=id.p" target="_blank">[筆記]</a>
         <li>OPTIONS: 查詢server 提供的續傳規格, 包含tus 版本, 檔案大小上限, server 支援的續傳行為(creation, expiration... )</li>
         <li>HEAD: 詢問目前檔案的續傳進度</li>
