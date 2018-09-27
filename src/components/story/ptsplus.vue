@@ -8,6 +8,12 @@
       </div>
     </section>
     <div>
+      簡介: Made in Taiwan 的影音平台, 業務需求必須自製page view, 為避免熱門影片的高併發請求導致倒站, 故我們用memcache 做延遲寫入<br>
+      <img src="../../assets/tv_main.png" alt="">
+      <br>
+    </div>
+    <hr>
+    <div>
       DIY Page View, 使用 <a href="http://php.net/manual/en/book.memcache.php" target="_blank">memcache</a>
       <p>
         分析流量判斷採用memcache 做延遲寫入實現page view, 批次回寫以減輕資料庫loading <br>
