@@ -63,4 +63,5 @@ div.content
     margin-top: 10px
 div.card-image img
   margin-top: 20px
+  min-height: 81px
 </style>

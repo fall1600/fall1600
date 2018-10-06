@@ -89,11 +89,4 @@ export default {
 <style lang="sass" scoped>
 section.container
   margin-top: 50px
-div.content 
-  > span.item
-    display: block
-  > p
-    margin-top: 10px
-div.card-image img
-  margin-top: 20px
 </style>
