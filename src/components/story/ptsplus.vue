@@ -2,7 +2,12 @@
   <div class="container">
     <section class="hero">
       <div class="hero-body">
-        <h1 v-if="mode==='interview'" class="title">Ptsplus</h1>
+        <h1 v-if="mode==='interview'" class="title">
+          Ptsplus
+          <a target="_blank" href="https://www.ptsplus.tv">
+            <take-off-icon></take-off-icon>
+          </a>
+        </h1>
         <h1 v-else-if="mode==='guest'" class="title">影音平台</h1>
         <h2 class="subtitle">DIY Page View</h2>
       </div>

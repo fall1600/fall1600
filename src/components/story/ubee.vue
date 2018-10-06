@@ -2,7 +2,12 @@
   <div class="container">
     <section class="hero">
       <div class="hero-body">
-        <h1 v-if="mode==='interview'" class="title">Ubee</h1>
+        <h1 v-if="mode==='interview'" class="title">
+          Ubee
+          <a target="_blank" href="https://www.ubee.io">
+            <take-off-icon></take-off-icon>
+          </a>
+        </h1>
         <h1 v-else-if="mode==='guest'" class="title">房屋比價網站</h1>
         <h2 class="subtitle">地圖找房, 金流</h2>
       </div>

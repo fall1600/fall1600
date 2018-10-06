@@ -2,7 +2,12 @@
   <div class="container">
     <section class="hero">
       <div class="hero-body">
-        <h1 v-if="mode==='interview'" class="title">Godex</h1>
+        <h1 v-if="mode==='interview'" class="title">
+          Godex
+          <a target="_blank" href="https://www.godexintl.com?locale=en">
+            <take-off-icon></take-off-icon>
+          </a>
+        </h1>
         <h1 v-else-if="mode==='guest'" class="title">產品網站</h1>
         <h2 class="subtitle">產品及其關聯資料, 多語系</h2>
       </div>

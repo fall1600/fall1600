@@ -2,7 +2,12 @@
   <div class="container">
     <section class="hero">
       <div class="hero-body">
-        <h1 v-if="mode==='interview'" class="title">Uknowiknow</h1>
+        <h1 v-if="mode==='interview'" class="title">
+          Uknowiknow
+          <a target="_blank" href="https://uknowiknow.com">
+            <take-off-icon></take-off-icon>
+          </a>
+        </h1>
         <h1 v-else-if="mode==='guest'" class="title">課程平台</h1>
       </div>
     </section>
