@@ -19,7 +19,8 @@
           Hello, I am fall1600
         </h1>
         <h2 class="subtitle">
-          A Backend engineer who loves
+          A Backend engineer who
+          <cards-heart></cards-heart>
           <a :class="{ buzzword: true, 'is-next-line': isMobile }" target="blank" :href="buzzwords[index].url">#{{buzzwords[index].key}}</a>
         </h2>
       </div>
