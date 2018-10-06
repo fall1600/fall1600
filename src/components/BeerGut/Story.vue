@@ -8,7 +8,10 @@
       </div>
       <div class="card-content" @click="go2story">
         <div class="content">
-          <h4>{{ story.title }}</h4>
+          <h4>
+            <slot name="icon-slot"></slot>
+            {{ story.title }}
+          </h4>
           <span v-show="story.frontend" class="item">前端: {{ story.frontend }}</span>
           <span v-show="story.backend" class="item">後端: {{ story.backend }}</span>
           <span class="item">{{ story.startAt }}</span>

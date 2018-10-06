@@ -4,7 +4,9 @@
       <Story
         v-for="story in stories"
         :story="story"
-      />
+      >
+        <component :is="story.icon" slot="icon-slot"></component>
+      </Story>
     </div>
   </section>
 </template>
@@ -31,7 +33,8 @@ export default {
           startAt: "2018/05",
           outsideLink: "https://www.lunlabel.muenai.com",
           imageSource: muenaiImage,
-          detailRoute: "story-lungnodule"
+          detailRoute: "story-lungnodule",
+          icon: "hospital-building-icon"
         },
         {
             title: "產品網站",
@@ -41,7 +44,8 @@ export default {
             startAt: "2018/02",
             outsideLink: "https://www.godexintl.com/?locale=en",
             imageSource: godexImage,
-            detailRoute: "story-godex"
+            detailRoute: "story-godex",
+            icon: "printer-3d-icon"
         },
         {
           title: "房屋比價網站",
@@ -51,7 +55,8 @@ export default {
           startAt: "2017/05",
           outsideLink: "https://www.ubee.io",
           imageSource: ubeeImage,
-          detailRoute: "story-ubee"
+          detailRoute: "story-ubee",
+          icon: 'home-map-marker-icon'
         },
         {
           title: "影音平台",
@@ -61,7 +66,8 @@ export default {
           startAt: "2017/09",
           outsideLink: "https://www.ptsplus.tv",
           imageSource: ptsplusImage,
-          detailRoute: "story-ptsplus"
+          detailRoute: "story-ptsplus",
+          icon: "television-classic-icon"
         },
         {
           title: "課程平台",
@@ -71,7 +77,8 @@ export default {
           startAt: "2016/12",
           outsideLink: "https://uknowiknow.com/",
           imageSource: uknowiknowImage,
-          detailRoute: "story-uknowiknow"
+          detailRoute: "story-uknowiknow",
+          icon: "teach-icon"
         },
       ]
     }
