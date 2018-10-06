@@ -22,6 +22,13 @@
           A Backend engineer who
           <cards-heart-icon></cards-heart-icon>
           <a :class="{ buzzword: true, 'is-next-line': isMobile }" target="blank" :href="buzzwords[index].url">#{{buzzwords[index].key}}</a>
+          <br>
+        </h2>
+        <h2 class="subtitle">
+          <a href="mailto:fall1600@gmail.com?subject=[JOB MATCHING]">
+            <email-icon></email-icon>
+            fall1600@gmail.com
+          </a>
         </h2>
       </div>
     </div>
