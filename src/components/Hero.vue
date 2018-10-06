@@ -20,7 +20,7 @@
         </h1>
         <h2 class="subtitle">
           A Backend engineer who
-          <cards-heart></cards-heart>
+          <cards-heart-icon></cards-heart-icon>
           <a :class="{ buzzword: true, 'is-next-line': isMobile }" target="blank" :href="buzzwords[index].url">#{{buzzwords[index].key}}</a>
         </h2>
       </div>
