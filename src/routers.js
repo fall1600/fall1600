@@ -13,6 +13,9 @@ import uknowiknow from './components/story/uknowiknow.vue'
 Vue.use(VueRouter)
 export default new VueRouter({
   mode: "history",
+  scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+  },
   routes: [
     {
       path: "",
