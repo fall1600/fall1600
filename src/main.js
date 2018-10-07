@@ -66,7 +66,7 @@ new Vue({
         {
           vmid: 'og:image',
           property: 'og:image',
-          content: ogImage
+          content: "https://www.fall1600.com" + ogImage
         },
         {
           vmid: 'og:site_name',
