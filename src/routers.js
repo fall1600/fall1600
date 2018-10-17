@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import dev from './routers-dev.js'
+
 // all route
 import Main from './components/Main.vue'
 import page404 from './components/page404.vue'
@@ -17,6 +19,7 @@ export default new VueRouter({
       return { x: 0, y: 0 }
   },
   routes: [
+    ...dev,
     {
       path: "",
       name: "root",
