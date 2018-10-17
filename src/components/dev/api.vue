@@ -5,11 +5,14 @@
 </template>
 
 <script>
+  import api from '@/libs/api.js'
   export default {
     created: function () {
-      this.$http.put("http://localhost:8000/api/story/1").then((response) => {
-          console.log(response.data)
+      console.warn("foo")
+      api.getStoryById(1).then(result => {
+          console.warn(result)
       })
+      console.warn("bar")
     },
   }
 </script>
