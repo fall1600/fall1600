@@ -6,9 +6,13 @@ import icons from './libs/icons.js'
 import VueMeta from 'vue-meta'
 import ogImage from './assets/fall1600.jpg'
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 Vue.config.productionTip = false
 
 Vue.use(VueMeta)
+Vue.use(VueAxios, axios)
 
 new Vue({
   render: h => h(App),
