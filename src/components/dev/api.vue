@@ -7,12 +7,20 @@
 <script>
   import api from '@/libs/api.js'
   export default {
+    methods: {
+      getStoryById: async function (id) {
+        console.log("foo")
+        let result = await api.getStoryById(id)
+        console.log(result)
+        console.log("bar")
+        return new Promise(function (resolve, reject) {
+          resolve(result)
+        })
+      }
+    },
     created: function () {
-      console.warn("foo")
-      api.getStoryById(1).then(result => {
-          console.warn(result)
-      })
-      console.warn("bar")
+      let result = this.getStoryById(1)
+      console.warn(result)
     },
   }
 </script>
