@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Hero from './Hero.vue'
-import BeerGut from './BeerGut.vue'
+import Hero from '@/components/home/Hero.vue'
+import BeerGut from '@/components/home/BeerGut.vue'
 export default {
   components: {
     Hero, BeerGut

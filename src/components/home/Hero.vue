@@ -14,7 +14,7 @@
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <img class="avatar" src="../assets/fall1600.jpg" alt="Avatar of fall1600">
+        <img class="avatar" src="@/assets/fall1600.jpg" alt="Avatar of fall1600">
         <h1 class="title">
           Hello, I am fall1600
         </h1>

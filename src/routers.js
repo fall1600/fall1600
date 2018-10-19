@@ -4,8 +4,8 @@ import VueRouter from 'vue-router'
 import dev from './routers-dev.js'
 
 // all route
-import Main from './components/Main.vue'
-import page404 from './components/page404.vue'
+import Main from './components/home.vue'
+import page404 from './components/route/page404.vue'
 import lungnodule from './components/route/story/lungnodule.vue'
 import ubee from './components/route/story/ubee.vue'
 import godex from './components/route/story/godex.vue'

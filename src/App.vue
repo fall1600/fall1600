@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import Main from './components/Main.vue'
+import home from './components/home.vue'
 import modeMixin from '@/libs/mixins/mode.js'
 export default {
   name: 'app',
   mixins: [modeMixin],
   components: {
-    Main
+    home
   }
 }
 </script>
