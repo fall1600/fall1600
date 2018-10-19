@@ -17,7 +17,7 @@ import godexImage from '@/assets/story/godex.png'
 import ptsplusImage from '@/assets/story/ptsplus.png'
 import ubeeImage from '@/assets/story/ubee.png'
 import uknowiknowImage from '@/assets/story/uknowiknow.svg'
-import Story from '@/components/BeerGut/Story.vue'
+import Story from '@/components/home/Story.vue'
 export default {
   components: {
     Story
