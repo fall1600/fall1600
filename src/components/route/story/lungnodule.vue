@@ -15,7 +15,7 @@
 
     <div>
       簡介: 用於醫生標示x光片的智慧醫療平台, 主邏輯分為網頁上的圖片標示, 以及系統的資料上傳與dicom 檔(x光片)解析 <br>
-      <img src="../../../assets/hospital_main.png" alt="">
+      <img src="../../../assets/story/hospital_main.png" alt="">
       <br><br>
       說明: 資料上傳處理, 前期prototype demo 影片, 用來驗證上傳資料的solution 是有效的<br>
       <iframe width="853" height="480" src="https://www.youtube.com/embed/otsM0GafUQ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

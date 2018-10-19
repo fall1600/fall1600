@@ -13,7 +13,8 @@
           <div class="media-left">
             <figure class="image is-96x96">
               <img
-                :src="partner.avatar"
+                src="../../../assets/fall1600.jpg"
+
                 alt="partner avatar">
             </figure>
           </div>
@@ -36,7 +37,7 @@
           <div class="background-icon"><span class="icon-twitter"></span></div>
         </div>
         <div class="content">
-          <div>參與過得專案:</div>
+          <div>參與過的專案:</div>
 
           <span
             v-for="project in partner.projects">

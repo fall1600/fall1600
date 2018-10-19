@@ -32,7 +32,7 @@ export default {
       partners: [
         {
           name: "jhlin",
-          avatar: "https://i.imgsafe.org/a4/a4bb9acc5e.jpeg",
+          avatar: require("../../../assets/fall1600.jpg"),
           title: "Backend Developer",
           key_vision: "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=",
           link: "https://www.fall1600.com",

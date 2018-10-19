@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import muenaiImage from '@/assets/muenai.png'
-import godexImage from '@/assets/godex.png'
-import ptsplusImage from '@/assets/ptsplus.png'
-import ubeeImage from '@/assets/ubee.png'
-import uknowiknowImage from '@/assets/uknowiknow.svg'
+import muenaiImage from '@/assets/story/muenai.png'
+import godexImage from '@/assets/story/godex.png'
+import ptsplusImage from '@/assets/story/ptsplus.png'
+import ubeeImage from '@/assets/story/ubee.png'
+import uknowiknowImage from '@/assets/story/uknowiknow.svg'
 import Story from '@/components/BeerGut/Story.vue'
 export default {
   components: {
