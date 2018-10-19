@@ -15,7 +15,7 @@
     <div>
       簡介: 課程報名系統 <br>
       說明: 因此專案為我進數位因子的第一個專案, 當時開發進度進尾聲, 故我負責的範圍只有前端套資料 <br>
-      <img src="../../assets/school_main.png" alt="">
+      <img src="../../../assets/school_main.png" alt="">
       <br>
     </div>
   </div>
