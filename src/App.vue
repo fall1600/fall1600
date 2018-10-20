@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import home from './components/home.vue'
+import home from './components/route/home.vue'
 import modeMixin from '@/libs/mixins/mode.js'
 export default {
   name: 'app',
