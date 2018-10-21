@@ -37,7 +37,7 @@ export default {
           key_vision: "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=",
           link: "https://github.com/RickySu",
           link_title: "RickySu",
-          brief: "PHP也有Day社群管理員, PHPConf Taiwan 2016 總招",
+          brief: "PHP也有Day社群管理員, PHPConf Taiwan 2016 總招; 從專案架構, 基礎建設, 系統層調校, 應用層規劃, 甚至到辦公室網路, 工作環境安裝, 專治各種疑難雜症",
           projects: ["phpsocket.io", "niceday", "hhvm-ext-uv", "php-livereload", "php_ext_uv", "ukik", "ptsplus", "ubee"]
         },
         {
