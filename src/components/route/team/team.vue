@@ -10,7 +10,7 @@
       <h1 class="title">Goodpartner 的成員</h1>
 
       <!-- Developers -->
-      <div class="row columns">
+      <div class="row columns is-multiline">
         <partner
           v-for="(partner, id) in partners"
           :key="id"

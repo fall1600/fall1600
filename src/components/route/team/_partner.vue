@@ -1,5 +1,5 @@
 <template>
-  <div class="column is-one-third">
+  <div class="column is-one-quarter">
     <div class="card large">
       <div class="card-image">
         <figure class="image">
