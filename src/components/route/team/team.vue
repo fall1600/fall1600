@@ -79,6 +79,16 @@ export default {
           link_title: "Lisa Lin",
           brief: "想學切板嗎? 來我教你",
           projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
+        },
+        {
+          name: "Kelly",
+          avatar: require("../../../assets/partner/kellychen.jpg"),
+          title: "Frontend Developer",
+          key_vision: "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=",
+          link: "",
+          link_title: "",
+          brief: "想學切板嗎? 來我教你",
+          projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
         }
       ]
     }
