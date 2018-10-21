@@ -59,6 +59,16 @@ export default {
           link_title: "Ciao's Blog",
           brief: "我喜歡用程式讓周遭人生活上一些重複繁雜的事情能夠更方便, 希望能用我自己的專業, 改變自己跟身邊人的生活",
           projects: ["lungnodule", "godex", "ptsplus", "ukik", "easy-express"]
+        },
+        {
+          name: "Bubble",
+          avatar: require("../../../assets/partner/bubblechiu.jpg"),
+          title: "Backend Developer",
+          key_vision: "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=",
+          link: "https://registry.jsonresume.org/bubble",
+          link_title: "Bubble Chiu",
+          brief: "REST API的設計、前端JavaScript撰寫、Html、PHP後端處理資料流以及串接資料庫以及功能抽離以及完整功能測試以及單元測試。",
+          projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
         }
       ]
     }
