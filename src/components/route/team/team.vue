@@ -73,7 +73,7 @@ export default {
         {
           name: "Lisa",
           avatar: require("../../../assets/partner/lisalin.png"),
-          title: "Frontend Developer",
+          title: "UI UX / Frontend",
           key_vision: require("../../../assets/partner/kp_wisdom.jpg"),
           link: "https://plus.google.com/u/1/111884861735059015453",
           link_title: "Lisa Lin",
@@ -83,7 +83,7 @@ export default {
         {
           name: "Kelly",
           avatar: require("../../../assets/partner/kellychen.jpg"),
-          title: "Frontend Developer",
+          title: "UI UX/ Frontend",
           key_vision: require("../../../assets/partner/kp_wisdom.jpg"),
           link: "",
           link_title: "",
