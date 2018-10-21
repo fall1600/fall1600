@@ -13,8 +13,7 @@
           <div class="media-left">
             <figure class="image is-96x96">
               <img
-                src="../../../assets/fall1600.jpg"
-
+                :src="partner.avatar"
                 alt="partner avatar">
             </figure>
           </div>
@@ -54,3 +53,10 @@ export default {
   props: ["partner"]
 }
 </script>
+
+<style lang="sass" scoped>
+  .media-left
+    img
+      height: 100px
+      width: auto
+</style>
