@@ -30,6 +30,13 @@
             fall1600@gmail.com
           </a>
         </h2>
+        <h2>
+
+          <router-link :to="{name: 'team'}">
+            <team-icon></team-icon>
+            My Partners
+          </router-link>
+        </h2>
       </div>
     </div>
   </section>
