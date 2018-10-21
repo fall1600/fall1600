@@ -7,7 +7,7 @@
     </div>
     <div class="section">
 
-      <h1 class="title">Goodpartner 的成員</h1>
+      <h1 class="title">Partners</h1>
 
       <!-- Developers -->
       <div class="row columns is-multiline">
@@ -68,7 +68,7 @@ export default {
           link: "https://registry.jsonresume.org/bubble",
           link_title: "Bubble Chiu",
           brief: "REST API的設計、前端JavaScript撰寫、Html、PHP後端處理資料流以及串接資料庫以及功能抽離以及完整功能測試以及單元測試。",
-          projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
+          projects: ["godex", "ptsplus", "ubee", "ukik", "n-soyoung", "wholesome1974"]
         },
         {
           name: "Lisa",
