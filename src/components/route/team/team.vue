@@ -89,6 +89,16 @@ export default {
           link_title: "",
           brief: "想學切板嗎? 來我教你",
           projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
+        },
+        {
+          name: "Paul",
+          avatar: require("../../../assets/partner/paulhsu.jpg"),
+          title: "Project Manager",
+          key_vision: "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=",
+          link: "",
+          link_title: "",
+          brief: "需求不明什麼的, 就交給我吧",
+          projects: ["lungnodule", "ukik", "easy-express"]
         }
       ]
     }
