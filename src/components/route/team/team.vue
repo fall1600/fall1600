@@ -69,6 +69,16 @@ export default {
           link_title: "Bubble Chiu",
           brief: "REST API的設計、前端JavaScript撰寫、Html、PHP後端處理資料流以及串接資料庫以及功能抽離以及完整功能測試以及單元測試。",
           projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
+        },
+        {
+          name: "Lisa",
+          avatar: require("../../../assets/partner/lisalin.png"),
+          title: "Frontend Developer",
+          key_vision: "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?dpr=1&auto=compress,format&fit=crop&w=1920&h=&q=80&cs=tinysrgb&crop=",
+          link: "https://plus.google.com/u/1/111884861735059015453",
+          link_title: "Lisa Lin",
+          brief: "想學切板嗎? 來我教你",
+          projects: ["godex", "ptsplus", "ukik", "n-soyoung", "wholesome1974"]
         }
       ]
     }
