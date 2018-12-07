@@ -18,7 +18,7 @@ export default {
   },
   data: function () {
     return {
-      code: 'f j d k',
+      code: 'm o r e',
     }
   }
 }
