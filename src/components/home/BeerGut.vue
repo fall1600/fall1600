@@ -1,5 +1,14 @@
 <template>
   <section class="container">
+    
+    <!-- has-text-primary -->
+    <h1 class="title is-1 has-text-centered">type 
+      <span class="is-italic">m</span> 
+      <span class="is-italic">o</span> 
+      <span class="is-italic">r</span> 
+      <span class="is-italic">e</span> 
+    </h1>
+  
     <div class="columns features is-multiline">
       <Story
         v-for="story in stories"
