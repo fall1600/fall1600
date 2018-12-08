@@ -1,18 +1,18 @@
 <template>
   <section class="container">
     
-    <!-- has-text-primary -->
     <h1 class="title is-1 has-text-centered">type 
-      <span class="is-italic">m</span> 
-      <span class="is-italic">o</span> 
-      <span class="is-italic">r</span> 
-      <span class="is-italic">e</span> 
+      <span class="is-italic" :class="{'has-text-primary': statuses[0]}">m</span> 
+      <span class="is-italic" :class="{'has-text-primary': statuses[1]}">o</span> 
+      <span class="is-italic" :class="{'has-text-primary': statuses[2]}">r</span> 
+      <span class="is-italic" :class="{'has-text-primary': statuses[3]}">e</span> 
     </h1>
   
     <div class="columns features is-multiline">
       <Story
         v-for="story in stories"
         :story="story"
+        :key=story.id
       >
         <component :is="story.icon" slot="icon-slot"></component>
       </Story>
@@ -31,8 +31,34 @@ export default {
   components: {
     Story
   },
+  methods: {
+    registerEvents: function () {
+      let me = this
+      this.$root.$on("cheet-true", function (num) {
+        me.statuses[num] = true
+        me.$forceUpdate()
+      })
+      this.$root.$on("cheet-false", function () {
+        me.statuses.forEach(function(status, key) {
+          me.statuses[key] = false
+        })
+        me.$forceUpdate()
+      })
+    },
+    unregisterEvents: function () {
+      this.$root.$off("cheet-true")
+      this.$root.$off("cheet-false")
+    }
+  },
+  created: function () {
+    this.registerEvents()
+  },
+  beforeDestroy: function () {
+    this.unregisterEvents()
+  },
   data: function() {
     return {
+      statuses: [false, false, false, false],
       stories: [
         {
           title: "醫療應用平台",
