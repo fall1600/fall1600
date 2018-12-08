@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     
-    <h1 class="title is-1 has-text-centered">type 
+    <h1 class="code title is-1 has-text-centered">type 
       <span class="is-italic" :class="{'has-text-primary': statuses[0]}">m</span> 
       <span class="is-italic" :class="{'has-text-primary': statuses[1]}">o</span> 
       <span class="is-italic" :class="{'has-text-primary': statuses[2]}">r</span> 
@@ -42,7 +42,12 @@ export default {
         me.statuses.forEach(function(status, key) {
           me.statuses[key] = false
         })
+        let $el = document.getElementsByClassName("code")[0]
+        $el.classList.add("shaking")
         me.$forceUpdate()
+        setTimeout(function() {
+          $el.classList.remove("shaking")
+        }, 1000)
       })
     },
     unregisterEvents: function () {
@@ -124,4 +129,20 @@ export default {
 <style lang="sass" scoped>
 section.container
   margin-top: 50px
+
+.shaking
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both
+    transform: translate3d(0, 0, 0)
+    backface-visibility: hidden
+    perspective: 1000px
+
+@keyframes shake
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+  40%, 60%
+    transform: translate3d(4px, 0, 0)
 </style>
