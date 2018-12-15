@@ -16,11 +16,18 @@
         return new Promise(function (resolve, reject) {
           resolve(result)
         })
-      }
+      },
+
+      getStories: async function () {
+        let result = await api.getStories()
+        console.log(result)
+      },
+
     },
     created: function () {
-      let result = this.getStoryById(1)
+      let result = this.getStoryById(100)
       console.warn(result)
+      this.getStories()
     },
   }
 </script>
