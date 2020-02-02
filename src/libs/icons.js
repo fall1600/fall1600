@@ -11,6 +11,8 @@ import Teach from "vue-material-design-icons/Teach.vue"
 import Email from "vue-material-design-icons/Email.vue"
 import CellphoneAndroid from "vue-material-design-icons/CellphoneAndroid.vue"
 import AccountGroup from "vue-material-design-icons/AccountGroup.vue"
+import TruckDelivery from "vue-material-design-icons/TruckDelivery.vue"
+import EggEaster from "vue-material-design-icons/EggEaster.vue"
 
 Vue.component("take-off-icon", TakeOff)
 Vue.component("cards-heart-icon", CardsHeart)
@@ -22,3 +24,5 @@ Vue.component("teach-icon", Teach)
 Vue.component("email-icon", Email)
 Vue.component("cellphone-android-icon", CellphoneAndroid)
 Vue.component("team-icon", AccountGroup)
+Vue.component("truck-delivery-icon", TruckDelivery)
+Vue.component("egg-easter-icon", EggEaster)

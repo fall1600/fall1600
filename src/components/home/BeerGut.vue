@@ -76,7 +76,7 @@ export default {
           outsideLink: "https://store.fbbuy.com.tw",
           imageSource: fbbuyImage,
           detailRoute: "story-fbbuy",
-          icon: "teach-icon"
+          icon: "egg-easter-icon"
         },
         {
           title: "直播電商",
@@ -87,7 +87,7 @@ export default {
           outsideLink: "https://handsup.shop/",
           imageSource: handsupImage,
           detailRoute: "story-handsup",
-          icon: "teach-icon"
+          icon: "truck-delivery-icon"
         },
         {
           title: "醫療應用平台",
