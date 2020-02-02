@@ -10,7 +10,19 @@
   
     <div class="columns features is-multiline">
       <Story
-        v-for="story in stories"
+        v-for="story in handsupStories"
+        :story="story"
+        :key=story.id
+      >
+        <component :is="story.icon" slot="icon-slot"></component>
+      </Story>
+    </div>
+
+    <hr>
+
+    <div class="columns features is-multiline">
+      <Story
+        v-for="story in dgfactorStories"
         :story="story"
         :key=story.id
       >
@@ -66,7 +78,7 @@ export default {
   data: function() {
     return {
       statuses: [false, false, false, false],
-      stories: [
+      handsupStories: [
         {
           title: "Facebook 整單系統",
           real_title: "FBbuy",
@@ -88,7 +100,9 @@ export default {
           imageSource: handsupImage,
           detailRoute: "story-handsup",
           icon: "truck-delivery-icon"
-        },
+        }
+      ],
+      dgfactorStories: [
         {
           title: "醫療應用平台",
           real_title: "lungnodule",
