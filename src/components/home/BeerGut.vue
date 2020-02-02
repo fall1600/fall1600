@@ -97,7 +97,7 @@ export default {
           title: "直播電商",
           real_title: "HandsUP",
           frontend: "",
-          backend: "7-11 物流",
+          backend: "7-11 物流服務串接",
           startAt: "2019/05",
           outsideLink: "https://handsup.shop/",
           imageSource: handsupImage,
