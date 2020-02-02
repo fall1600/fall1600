@@ -16,7 +16,7 @@
     <div>
       <!-- fixme 補abstract, 換大圖 -->
       簡介: 以重構為原點, 拆除過時程式碼與整體系統維護<br>
-      <img src="../../../assets/story/product_main.png" alt="">
+      <img src="../../../assets/story/fbbought_main.png" alt="">
       <br>
     </div>
     <hr>
