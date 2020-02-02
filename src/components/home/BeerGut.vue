@@ -8,6 +8,8 @@
       <span class="is-italic" :class="{'has-text-primary': statuses[3]}">e</span> 
     </h1>
   
+    <h1 class="title is-3">2019/04 ~</h1>
+
     <div class="columns features is-multiline">
       <Story
         v-for="story in handsupStories"
@@ -20,6 +22,7 @@
 
     <hr>
 
+    <h1 class="title is-3">2017/02 ~ 2019/02 </h1>
     <div class="columns features is-multiline">
       <Story
         v-for="story in dgfactorStories"
