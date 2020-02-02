@@ -9,42 +9,43 @@
           </a>
         </h1>
         <h1 v-else-if="mode==='guest'" class="title">整單系統</h1>
-        <h2 class="subtitle"></h2>
+        <h2 class="subtitle">重點功能分析與重構, 應用層改善, 系統維護</h2>
       </div>
     </section>
 
     <div>
-      簡介: 以產品為核心的商業網站, 具備多樣關聯物件, 並考慮多語處理<br>
+      <!-- fixme 補abstract, 換大圖 -->
+      簡介: 以重構為原點, 拆除過時程式碼與整體系統維護<br>
       <img src="../../../assets/story/product_main.png" alt="">
       <br>
     </div>
     <hr>
     <div>
-      資料庫schema 開發, 使用 <a href="http://propelorm.org/" target="_blank">Propel</a> <br>
-      <p>
-        由產品為原點設計關聯資料的規劃與實現, 並支援資料上的多語系(*_i18n) <br>
-        <img src="../../../assets/story/product_product_schema.png" alt="">
-      </p>
+      第一波重構, 清除多餘程式碼 <br>
+      自行定義dead code: 很久沒被執行的 code, 不再被需要的 code <br>
+      想法: 從真實的使用情況了解哪些程式碼有在執行, 哪些沒有 <br>
+      方向: access.log → route → controller → service <br>
+      實作: 撰寫工具分析access log 中的路徑, 進而產出api 執行頻率報表, 除了可輔助判斷dead code 之外, 亦可得知哪些api 頻繁執行, 值得進行重構 <br>
+      <a
+        target="_blank"
+        href="https://docs.google.com/presentation/d/1RdKQP1s0DVDhbAlqYUXriBBBmmvGVkvZVlliZppZzgU/edit#slide=id.g5d07d264ad_0_1">
+        重構紀錄
+      </a>
       <hr>
-      <p>
-        利用propel 提供的hook function(preSave, preInsert...) 做到應用層級的邏輯設定 <br>
-        舉例: 新增產品規格, 可在存入資料庫前抓出相同分類的最接近規格做預設排序, 但非寫在自身儲存邏輯 <br>
-        <img src="../../../assets/story/product_hook.png" alt=""> <br><br>
-        產品規格自身儲存邏輯, 因應上圖(schema) 的資料關聯, 藉由發送event 達到程式邏輯解耦合 <br>
-        <img src="../../../assets/story/product_create_spec.png" alt=""> <br><br>
-        清查註冊接聽此事件的listener <br>
-        $ app/console debug:event-dispatcher <br>
-        <img src="../../../assets/story/product_create_spec_event.png" alt="">
-      </p>
+      持續型重構, 從單元測試了解應用層邏輯 <br>
+      在無人能解釋應用層邏輯的情境下, 單元測試幾乎是最低成本取得答案的手段
       <hr>
-      <p>
-        Nested Set Model 為資料庫中常見的階層式資料儲存, 常見的應用場景為階層式分類或目錄 <br>
-        恰好應用在專案中的階層式問答, 此
-        <a href="https://docs.google.com/presentation/d/17P6VY9vT18i6zCsWLK0mBXquCJ_S4SN0h1T6v3LUXlE/edit" target="_blank">[文件]</a>
-        為我開給remote 前端的api 說明書
-        <br>
-        <img src="../../../assets/story/product_qatree.png" alt="">
-      </p>
+      第二波重構, 整單系統核心分析與階段性重構 <br>
+      除了分析與了解核心邏輯之外, 並採用設計模式讓程式更具彈性, 可讀性與擴充性 <br>
+      策略模式: 因應系統陸續服務了各種賣家, 累積了2^3 種行為, 因應不同賣家採取不同的具象物件對應 <br>
+      樣板模式: 抽象物件中的主演算法以樣板實作, 讓具象物件實作特定的行為 <br>
+      擴充性: 配貨想做VIP 怎麼實作? 繼承QueryBehavior, 或是SortBehavior 即可 <br>
+      <a
+        target="_blank"
+        href="https://docs.google.com/presentation/d/1RdKQP1s0DVDhbAlqYUXriBBBmmvGVkvZVlliZppZzgU/edit#slide=id.g78eddda551_0_5">
+        重構紀錄
+      </a>
+      <hr>
     </div>
   </div>
 </template>
