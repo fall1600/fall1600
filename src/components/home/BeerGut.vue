@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import fbbuyImage from '@/assets/story/fbbuy.png'
 import muenaiImage from '@/assets/story/muenai.png'
 import godexImage from '@/assets/story/godex.png'
 import ptsplusImage from '@/assets/story/ptsplus.png'
@@ -65,6 +66,17 @@ export default {
     return {
       statuses: [false, false, false, false],
       stories: [
+        {
+          title: "整單系統",
+          real_title: "FBbuy",
+          frontend: "維護型調整",
+          backend: "重點功能分析與重構, 應用層改善, 系統維護",
+          startAt: "2019/07",
+          outsideLink: "https://store.fbbuy.com.tw",
+          imageSource: fbbuyImage,
+          detailRoute: "story-fbbuy",
+          icon: "teach-icon"
+        },
         {
           title: "醫療應用平台",
           real_title: "lungnodule",
