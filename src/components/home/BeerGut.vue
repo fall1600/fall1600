@@ -68,17 +68,6 @@ export default {
       statuses: [false, false, false, false],
       stories: [
         {
-          title: "直播電商",
-          real_title: "HandsUP",
-          frontend: "",
-          backend: "7-11 物流",
-          startAt: "2019/05",
-          outsideLink: "https://handsup.shop/",
-          imageSource: handsupImage,
-          detailRoute: "story-handsup",
-          icon: "teach-icon"
-        },
-        {
           title: "Facebook 整單系統",
           real_title: "FBbuy",
           frontend: "維護型調整",
@@ -87,6 +76,17 @@ export default {
           outsideLink: "https://store.fbbuy.com.tw",
           imageSource: fbbuyImage,
           detailRoute: "story-fbbuy",
+          icon: "teach-icon"
+        },
+        {
+          title: "直播電商",
+          real_title: "HandsUP",
+          frontend: "",
+          backend: "7-11 物流",
+          startAt: "2019/05",
+          outsideLink: "https://handsup.shop/",
+          imageSource: handsupImage,
+          detailRoute: "story-handsup",
           icon: "teach-icon"
         },
         {
