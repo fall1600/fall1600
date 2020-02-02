@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import handsupImage from '@/assets/story/handsup.png'
 import fbbuyImage from '@/assets/story/fbbuy.png'
 import muenaiImage from '@/assets/story/muenai.png'
 import godexImage from '@/assets/story/godex.png'
@@ -67,7 +68,18 @@ export default {
       statuses: [false, false, false, false],
       stories: [
         {
-          title: "整單系統",
+          title: "直播電商",
+          real_title: "HandsUP",
+          frontend: "",
+          backend: "7-11 物流",
+          startAt: "2019/05",
+          outsideLink: "https://handsup.shop/",
+          imageSource: handsupImage,
+          detailRoute: "story-handsup",
+          icon: "teach-icon"
+        },
+        {
+          title: "Facebook 整單系統",
           real_title: "FBbuy",
           frontend: "維護型調整",
           backend: "重點功能分析與重構, 應用層改善, 系統維護",

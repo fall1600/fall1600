@@ -12,6 +12,7 @@ import godex from './components/route/story/godex.vue'
 import ptsplus from './components/route/story/ptsplus.vue'
 import uknowiknow from './components/route/story/uknowiknow.vue'
 import fbbuy from './components/route/story/fbbuy.vue'
+import handsup from './components/route/story/handsup.vue'
 
 Vue.use(VueRouter)
 export default new VueRouter({
@@ -57,10 +58,15 @@ export default new VueRouter({
       component: uknowiknow
     },
     {
-      path: "/story/old-ec",
+      path: "/story/fbbought",
       name: "story-fbbuy",
       component: fbbuy
-    }
+    },
+    {
+      path: "/story/handsdown",
+      name: "story-handsup",
+      component: handsup
+    },
   ],
 })
  
