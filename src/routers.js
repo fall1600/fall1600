@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import dev from './routers-dev.js'
+// import dev from './routers-dev.js'
 
 // all route
 import Main from './components/route/home.vue'
@@ -11,6 +11,7 @@ import ubee from './components/route/story/ubee.vue'
 import godex from './components/route/story/godex.vue'
 import ptsplus from './components/route/story/ptsplus.vue'
 import uknowiknow from './components/route/story/uknowiknow.vue'
+import fbbuy from './components/route/story/fbbuy.vue'
 
 Vue.use(VueRouter)
 export default new VueRouter({
@@ -19,7 +20,7 @@ export default new VueRouter({
       return { x: 0, y: 0 }
   },
   routes: [
-    ...dev,
+    // ...dev,
     {
       path: "",
       name: "root",
@@ -54,6 +55,11 @@ export default new VueRouter({
       path: "/story/school",
       name: "story-uknowiknow",
       component: uknowiknow
+    },
+    {
+      path: "/story/old-ec",
+      name: "story-fbbuy",
+      component: fbbuy
     }
   ],
 })
