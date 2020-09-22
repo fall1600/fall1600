@@ -9,18 +9,97 @@
           </a>
         </h1>
         <h1 v-else-if="mode==='guest'" class="title">整單系統</h1>
-        <h2 class="subtitle">重點功能分析與重構, 應用層改善, 系統維護</h2>
+        <h2 class="subtitle">重點功能分析與重構, 應用層改善與基礎建設開發, 系統維護</h2>
       </div>
     </section>
 
     <div>
       <!-- fixme 補abstract -->
-      簡介: 以重構為出發點, 拆除過時程式碼與整體系統維護 <br><br>
-      <img src="../../../assets/story/fbbought_main.png" alt="">
+      簡介: 老牌+1 購物系統 <br><br>
+      <ul class="menu-list">
+        <li>
+          <a href="https://tw.news.yahoo.com/%E8%87%89%E6%9B%B8%E7%95%99%E8%A8%80-1%E5%8D%B3%E5%8F%AF%E4%B8%8B%E5%96%AE-fbbuy%E5%AE%8C%E7%BE%8E%E8%A7%A3%E6%B1%BA%E5%93%81%E7%89%8C%E9%9B%BB%E5%95%86%E7%9A%84%E7%97%9B%E9%BB%9E-080000533.html">
+            Yahoo
+          </a>
+          </li>
+        <li>
+          <a href="https://www.bnext.com.tw/article/48921/2018-future-commerce-awards">
+            數位時代
+          </a>
+        </li>
+      </ul>
+      <br>
+      <img src="../../../assets/story/fbbought_superuser_login.png" alt="">
       <br>
     </div>
     <hr>
+
     <div>
+      框架版本從官方放棄支援的Laravel 5.1 升到2020年主流版本7.x<br><br>
+      完成接手期間最想做的事: 讓其他RD 也能喜歡在此案子貢獻PR
+      <hr>
+      整理與開發package<br>
+        <ul class="menu-list">
+          <li>
+            <a href="https://packagist.fbbuy.com.tw/" target="_blank">
+              private repository by composer/satis
+            </a>
+          </li>
+          <li><a>member-managers (前人遺作, 整理至上層app 可用)</a></li>
+          <li>
+            <a href="https://github.com/fall1600/ecpay-invoice/" target="_blank">
+              開發綠界發票sdk
+            </a>
+            <ul>
+              <li><a>商城開發票給消費者</a></li>
+              <li><a>系統開發票給商城</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>models (最有價值物件)</a>
+            <ul>
+              <li><a>auto-order (cronjob, Laravel 7.x)</a></li>
+              <li><a>Repo: great-again(RESTful api, Laravel 7.x)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://github.com/fall1600/newebpay" target="_blank">
+              藍新金流package (還真的遇到藍新說要換api domain name)
+            </a>
+            <ul>
+              <li><a>全付方式皆支援, 正流程, 接response encrypt/decrypt 沒煩惱</a></li>
+              <li><a>半天內轉移, 驗證過儲存層資料格式</a></li>
+            </ul>
+          </li>
+        </ul>
+      <hr>
+      訂單模組整組改寫<br>
+      <ul class="menu-list">
+        <li>
+          <a href="https://docs.google.com/presentation/d/1RdKQP1s0DVDhbAlqYUXriBBBmmvGVkvZVlliZppZzgU/edit#slide=id.g78eddda551_0_5" target="_blank">
+            文件與程式碼兼具, 原作不在也不怕
+            </a>
+          </li>
+        <li>
+          <a>jargon</a>
+            <ul>
+              <li><a href="">補上Transaction, 從此可以安心下班</a></li>
+              <li><a href="">SOLID refactor</a></li>
+              <li><a href="">template</a></li>
+              <li><a href="">strategy</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="">
+            系統內全部賣家批次成立訂單執行時間從35 分鐘縮短至5 分鐘<br><br>
+            遇到fb 全球性bug, 積了三天沒跑的資料照樣半小時內執行完畢<br><br>
+            <img src="../../../assets/story/fbbought_fb_global_bug.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- div>
       第一波重構, 清除多餘程式碼 <br>
       自行定義dead code: 很久沒被執行的 code, 不再被需要的 code, 像過年大掃除一樣, 用不到就丟掉<br>
       想法: 從真實的使用情況了解哪些程式碼有在執行, 哪些沒有; 再善用IDE 判斷物件之間調用method 情形 <br>
@@ -52,7 +131,7 @@
       <br> <br>
       <img src="../../../assets/story/fbbought_template.png" alt="">
       <hr>
-    </div>
+    </div -->
   </div>
 </template>
 
