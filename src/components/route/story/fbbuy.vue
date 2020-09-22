@@ -15,15 +15,15 @@
 
     <div>
       <!-- fixme 補abstract -->
-      簡介: 老牌+1 購物系統 <br><br>
+      簡介: 深耕Facebook 社群+1 購物系統<br><br>
       <ul class="menu-list">
         <li>
-          <a href="https://tw.news.yahoo.com/%E8%87%89%E6%9B%B8%E7%95%99%E8%A8%80-1%E5%8D%B3%E5%8F%AF%E4%B8%8B%E5%96%AE-fbbuy%E5%AE%8C%E7%BE%8E%E8%A7%A3%E6%B1%BA%E5%93%81%E7%89%8C%E9%9B%BB%E5%95%86%E7%9A%84%E7%97%9B%E9%BB%9E-080000533.html">
+          <a href="https://tw.news.yahoo.com/%E8%87%89%E6%9B%B8%E7%95%99%E8%A8%80-1%E5%8D%B3%E5%8F%AF%E4%B8%8B%E5%96%AE-fbbuy%E5%AE%8C%E7%BE%8E%E8%A7%A3%E6%B1%BA%E5%93%81%E7%89%8C%E9%9B%BB%E5%95%86%E7%9A%84%E7%97%9B%E9%BB%9E-080000533.html" target="_blank">
             Yahoo
           </a>
           </li>
         <li>
-          <a href="https://www.bnext.com.tw/article/48921/2018-future-commerce-awards">
+          <a href="https://www.bnext.com.tw/article/48921/2018-future-commerce-awards" target="_blank">
             數位時代
           </a>
         </li>
